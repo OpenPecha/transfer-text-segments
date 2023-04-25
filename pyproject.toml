@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "transfer-text-segments"
 version = "0.0.1"
 authors = [
-  { name="OpenPecha", email="dev@openpecha.org" },
+  { name="Gayche", email="gaychetenzin@gmail.com" }, { name="OpenPecha", email="dev@openpecha.org" }
 ]
 description = "A small package to transfer orginal text on to the segmented text"
 readme = "README.md"
@@ -19,8 +19,9 @@ classifiers = [
 dependencies = [
   "antx==0.1.11",
   "pandas==2.0.1",
-  "numpy==1.24.3",
+  "numpy==1.24.3"
 ]
+[project.optional-dependencies]
 dev = [
     "pytest",
     "pytest-cov",
