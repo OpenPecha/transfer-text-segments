@@ -19,8 +19,8 @@ classifiers = [
 dependencies = [
   "openpecha>=0.8.21",
   "antx>=0.1.4",
-  "pandas==2.0.1"
-  "numpy==1.24.3"
+  "pandas==2.0.1",
+  "numpy==1.24.3",
 ]
 dev = [
     "pytest",
