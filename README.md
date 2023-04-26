@@ -84,7 +84,10 @@ print(result)
 <!-- Link to the repo owners' github profiles -->
 
 - [@10zinten](https://github.com/10zinten)
+- [@kaldan007](https://github.com/kaldan007)
+- [@spsither](https://github.com/spsither)
 - [@evanyerburgh](https://github.com/evanyerburgh)
+- [@TenzinGayche](https://github.com/TenzinGayche)
 
 ## Integrations
 
