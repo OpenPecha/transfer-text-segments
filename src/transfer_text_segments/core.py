@@ -36,12 +36,3 @@ def transfer_text(OriginalText, PredictedTSV, ColumnNumber):
     tsvFile[ColumnNumber] = transferedText
     # returns a dataframe
     return tsvFile
-
-
-print(
-    transfer_text(
-        "tests/sample/test_get_original_text.txt",
-        "tests/sample/test-transcription_1.tsv",
-        3,
-    )
-)
