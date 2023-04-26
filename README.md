@@ -17,12 +17,10 @@ from transfer_text_segments import transfer_text
 ```
 
 ### Transfer_text
-
+```python
 
 orginaltext_with_annotation = transfer(Original_text_location,Predicted_tsv_location Column_name)
-
-
-
+```
 
 **Original_text_location** := contains location of the original text
 
@@ -79,7 +77,7 @@ print(result)
 1  Marpa-ep1-002.wav  5.40   7.20  མར་པ་ཆོས་ཀྱི་བློ་གྲོས་ནི།
 2  Marpa-ep1-003.wav  7.75   9.65  ཕྱི་ལོ་ ༡༠༡༡ ལོར་
 3  Marpa-ep1-004.wav  9.90  12.55  བྲག་ཕུག་ཆུ་ཁྱེར་ཞེས་པའི་ས་གནས་སུ་སྐུ་འཁྲུངས།
-
+```
 ## Project owner(s)
 
 <!-- Link to the repo owners' github profiles -->
