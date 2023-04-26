@@ -7,12 +7,13 @@
 ### Install using pip.
 
 ```
+pip install git+https://github.com/OpenPecha/transfer-text-segments.git
 
 ```
 
 ### Import
 
-```
+```python
 from transfer_text_segments import transfer_text
 ```
 
