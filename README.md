@@ -98,5 +98,5 @@ None
 
 <!-- Update the link to the docs -->
 
-Read the docs [here](https://wiki.openpecha.org/#/dev/coding-guidelines).
+Read the docs about antx [here]([https://wiki.openpecha.org/#/dev/coding-guidelines](https://github.com/Esukhia/antx)).
 ```
