@@ -18,12 +18,12 @@ from transfer_text_segments import transfer_text
 
 ### Transfer_text
 
-```
+
 orginaltext_with_annotation = transfer(Original_text_location,Predicted_tsv_location Column_name)
 
-```
 
-```
+
+
 **Original_text_location** := contains location of the original text
 
 **Predicted_tsv_location ** := contains location of the tsv file
