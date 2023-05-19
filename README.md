@@ -20,7 +20,7 @@ from transfer_text_segments import transfer_text
 ### Transfer_text
 ```python
 
-orginaltext_with_annotation = transfer(Original_text_location,Predicted_tsv_location Column_name)
+orginaltext_with_annotation = transfer_text(Original_text_location,Predicted_tsv_location Column_name)
 ```
 
 **Original_text_location** := contains location of the original text
