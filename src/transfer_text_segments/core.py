@@ -40,7 +40,7 @@ def get_original_text(OriginalText):
     return target
 
 
-def transfer_text(OriginalText, PredictedTSV, ColumnNumber):
+def transfer_text(OriginalText, PredictedTSV, ColumnNumber='sentence'):
     """transfers the annotation from predicted text to original text and returns a dataframe
 
     Args:
