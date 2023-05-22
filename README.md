@@ -49,8 +49,8 @@ predicted_tsv =  "sample/test_transcription_1.tsv"
 ```
 
 ```python
-column  =  3
-# 0.                1    2        3
+column  =  'sentence'
+# 0.                1    2        sentence
 #Marpa-ep1-001.wav	1.9	   3.65	  མར་པ་ཆོས་ཀྱི་ལོ་འགྲོས
 #Marpa-ep1-002.wav	5.4 	 7.2	 མར་པ་ཆོས་གོི་སློ་གྲོད་ནི།
 #Marpa-ep1-003.wav	7.75	 9.65  སཤི་ལོ་རྒྱ་མད་བཅུགས་རྗིས་སལོར་དུ།
@@ -58,7 +58,7 @@ column  =  3
 ```
 
 ```python
-result = transfer_text(original_text, predicted_tsv,3)
+result = transfer_text(original_text, predicted_tsv,'sentence')
 
 extracted text from tsv file..
 extracted text from original file..
@@ -73,7 +73,7 @@ Transfering annotations...
 ```python
 print(result)
 #Note: It returns a dataframe
-              0     1      2            3
+              0     1      2            sentence
 0  Marpa-ep1-001.wav  1.90   3.65  མར་པ་ལོ་ཙཱ་བ་ཆོས་ཀྱི་བློ་གྲོས།
 1  Marpa-ep1-002.wav  5.40   7.20  མར་པ་ཆོས་ཀྱི་བློ་གྲོས་ནི།
 2  Marpa-ep1-003.wav  7.75   9.65  ཕྱི་ལོ་ ༡༠༡༡ ལོར་
