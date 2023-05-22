@@ -6,7 +6,6 @@ from antx import transfer
 
 def extract_tsv_text(tsvFile, ColumnNumber):
     """extracts text from dataframe using column number
-
     Args:
         tsvFile (Dataframe): dataframe of predicted tsv file
         ColumnNumber (integer/string):column name of the text to be extracted
@@ -52,13 +51,10 @@ def transfer_text(OriginalText, PredictedTSV, ColumnNumber):
     Returns:
         dataframe: dataframe that contains transfered annotation on original text
     """
-
-    tsvFile = pd.read_csv(f"{PredictedTSV}", sep="\t", header=None)
+    tsvFile = pd.read_csv(f"{PredictedTSV}", sep="\t")
     source = extract_tsv_text(tsvFile, ColumnNumber)
     target = get_original_text(OriginalText)
-
     annotation = [["segment", "(\n)"]]
-
     transferedText = transfer(source, annotation, target).split("\n")
     tsvFile[ColumnNumber] = transferedText
     # returns a dataframe
