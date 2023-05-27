@@ -56,6 +56,13 @@ def transfer_text(OriginalText, PredictedTSV, ColumnNumber='sentence'):
     target = get_original_text(OriginalText)
     annotation = [["segment", "(\n)"]]
     transferedText = transfer(source, annotation, target).split("\n")
-    tsvFile[ColumnNumber] = transferedText
+    if len(transferedText) > len(tsvFile):
+        transferedText = transferedText[:len(tsvFile)]
+        tsvFile[ColumnNumber] = transferedText
+    elif len(transferedText) < len(tsvFile):
+        transferedText = transferedText + [np.nan]*(len(tsvFile) - len(transferedText))
+        tsvFile[ColumnNumber] = transferedText
+    else:
+        tsvFile[ColumnNumber] = transferedText
     # returns a dataframe
     return tsvFile
