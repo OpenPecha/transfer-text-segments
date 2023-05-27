@@ -59,10 +59,14 @@ def transfer_text(OriginalText, PredictedTSV, ColumnNumber='sentence'):
     if len(transferedText) > len(tsvFile):
         transferedText = transferedText[:len(tsvFile)]
         tsvFile[ColumnNumber] = transferedText
+        status= f'Truncated {abs(len(transferedText)-len(tsvFile))}'
     elif len(transferedText) < len(tsvFile):
         transferedText = transferedText + [np.nan]*(len(tsvFile) - len(transferedText))
         tsvFile[ColumnNumber] = transferedText
+        status=f'Padded {abs(len(transferedText)-len(tsvFile))}'
     else:
         tsvFile[ColumnNumber] = transferedText
+        status='Normal'
+
     # returns a dataframe
-    return tsvFile
+    return tsvFile,status
